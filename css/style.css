@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+/* awal nav bar */
+nav {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.466);
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0px 1px 4.6px 0.3px rgba(0,0,0,0.25);
+    z-index: 9999;
+}
+
+label.logo {
+    font-family: lora;
+    color: white;
+    font-size: 35px;
+    line-height: 60px;
+    padding: 0 50px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 7px 20px;
+    transition-duration: .5s;
+}
+
+a.active,a:hover {
+    
+    transition-duration : .3s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 60px;
+    margin-right: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 858px){
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+}
+/* akhir navbar */
+
+/* jumbotron */
+ .jumbo{
+    background-image: url('/img/bg/2.jpg');
+    background-size: cover;
+}
+/* akhir jumbotron */
+
+/* about */
+.about {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+    background-color: #F3F4F3;
+}
+
+.skillbar {
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.skillbar .skillbar-title {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.skillbar .skillbar-percent {
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.skillbar-bar {
+    background-color: #ededed;
+    width: 100%;
+    height: 5px;
+}
+
+.skillbar-bar .skillbar-child {
+    height: 100%;
+    background-color: #606060;
+}
+/* akhir about */
+
+
+/* portofolio */
+.item-work{
+    position: relative;
+}
+
+.item-work img {
+    background-color: black;
+
+}
+
+.item-work span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition-duration: .3s;
+    
+}
+
+.portfolio .item-work span h2 {
+    color: white;
+}
+
+.portfolio .item-work span p {
+    color: white;
+}
+
+.item-work .deskp:hover span {
+    opacity: 1;
+}
+/* akhir portofolio */
+
+/* work experiences */
+.work-exp .single-exp {
+        box-shadow: 0 20px 40px rgba(0,0,0,.2);
+        padding: 2%;
+}
+/* akhir work experiences */
