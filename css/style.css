@@ -9,6 +9,7 @@
 /* awal nav bar */
 nav {
     background-color: transparent;
+    opacity: 60%;
     color: rgba(255, 255, 255, 0.466);
     height: 60px;
     width: 100%;
@@ -174,3 +175,18 @@ a.active,a:hover {
         padding: 2%;
 }
 /* akhir work experiences */
+
+/* KONTAK */
+.footer {
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+}
+
+.footer .row.item .single-exp{
+    border: 1px solid rgba(235, 23, 23, 0.5);
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+}
+
+.footer .row.item .single-exp h6{
+    margin: 3px 10px;
+}
+/* AKHIR KONTAK */
